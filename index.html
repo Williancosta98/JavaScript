@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+    <title>JS - DevClub</title>
+</head>
+
+
+<body>
+
+    <h1>JavaScript</h1>
+    <input onkeypress="digiteiNoInput()" id="main-input" placeholder="Digite aqui">
+    <p class="paragraph-js1">Começando a nossa jornada para aparender</p>
+    <p class="paragraph-js2">A liguagem de <b>Programação</b> mais versátil do mundo!</p>
+
+    <p class="paragraph-show"></p>
+
+    <button onclick="cliqueiNoBotao()" class="main-button">Frase</button>
+
+</body>
+<script src="./script.js"></script>
+<style>
+    h1 {
+        color: yellow;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+        font-size: 100px;
+
+    }
+
+    body {
+        background-color: aliceblue;
+    }
+
+    #main-input {
+        display: flex;
+        margin: auto;
+        width: 600px;
+        border: black solid 3.5px;
+        margin-top: 70px;
+    }
+
+    .paragraph-js1 {
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+        font-family: "Eczar", serif;
+    }
+
+    .paragraph-js2 {
+        font-family: "Eczar", serif;
+        text-align: center;
+        font-size: 45px;
+        margin-top: -65px;
+    }
+
+    .main-button {
+        font-family: "Eczar", serif;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        cursor: pointer;
+        border: 3px solid rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 700;
+        width: 215px;
+        height: 40px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        margin-left: 44%;
+        border-radius: 28px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .main-button:hover {
+        opacity: 0.8;
+    }
+
+    .main-button:active {
+        color: #fffb2d;
+        font-size: 24px;
+    }
+
+    #main-input {
+        border: solid 3px;
+        text-align: center;
+    }
+
+    .paragraph-show {
+        font-size: 30px;
+        text-align: center;
+        animation: move 2s infinite;
+        text-shadow: 2px 2px 4px #fffb2d;
+
+
+
+    }
+</style>
+
+</html>
